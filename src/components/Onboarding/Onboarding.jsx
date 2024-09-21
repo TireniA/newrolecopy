@@ -58,7 +58,7 @@ const Onboarding = () => {
                 <div className="onboard-main  px-sm-5 text-center">
                     <h5>Nextrole is Amazing!</h5>
                     <p>Our Services Include...</p>
-                    <div className="onboardimggrid my-3">
+                    <div className="onboardimggrid w-100 my-3">
                         {data.map((item, index) => (
                             <div className='onboardimgdis'>
                                 <img src={item.pic} alt="" className="img-fluid" />
