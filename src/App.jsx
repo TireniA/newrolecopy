@@ -9,15 +9,19 @@ import Login from './components/Log In/Login'
 import AuthContextProvider from './context/AuthContext'
 import Recommendation from './pages/Recommendation/Recommendation'
 import Salary from './pages/Recommendation/Salary'
+import Start from './pages/Start/Start'
+import OnboardingLast from './components/Onboarding/OnboardingLast'
 
 function App() {
   return (
-  
+
     <AuthContextProvider>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Login />} />
+          <Route path='/' element={<Start />} />
+          <Route path='/login' element={<Login />} />
           <Route path="/ob" element={<Onboarding />} />
+          <Route path="/obl" element={<OnboardingLast />} />
           <Route path="/resumebuilder" element={<ResumeBuilder />} />
           <Route path="/salary" element={<Salary />} />
           <Route path="/db" element={<><Navbar /><Dashboard /></>} />

@@ -89,13 +89,34 @@
     background-color: black;
     border: 2px solid black;
 }
-.art img{
-    width: 160px;
+.art img, .onboardimggrid img{
+    width: 100px;
+    mix-blend-mode: multiply;
 }
 .art ul{
     color: #979797;
     text-align: left;
     font-size: 12px;
+}
+.onboardimggrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.onboardimgdis{
+    border: 1px solid #000;
+    width: 200px;
+    padding: 10px 0px 30px 0px;
+    border-radius: 24px;
+    background: #F4F4F4;
+    transition: all 0.3s ease-in;
+}
+.onboardimgdis:hover{
+    transform: scale(1.05);
+}
+.onboardimgdis h5{
+    font-size: 16px;
+    text-align: center;
 }
 .button{
     width: 100%;
