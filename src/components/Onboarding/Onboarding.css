@@ -1,0 +1,180 @@
+.onboard{
+    min-height: calc(100vh - 100px);
+}
+.onboard-main{
+    width: 500px;
+    padding: 10px 0px;
+}
+.onboard-lmain{
+    width: 700px;
+    padding: 10px 0px;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.onboard-lmain h5, .onboard-lmain p{
+    max-width: 450px;
+}
+.onboard-lmain button{
+    width: 65%;
+}
+.olgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.olgrid div:first-of-type {
+    background: #FCFCFC;
+}
+.olgrid div:nth-of-type(2) {
+    background: white;
+}
+
+
+.olbox{
+    border: 1px solid black;
+}
+.olbox img{
+    width: 110px;
+}
+.olgrid .olbox p{
+    font-size: 12px;
+}
+.onboard h5, .art h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+.onboard p{
+    font-size: 13px;
+    color: #979797
+}
+.progres{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.progres::before{
+    content: '';
+    position: absolute;
+    background-color: #D1D5DB;
+    width: 100%;
+    height: 3px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /* z-index: 1; */
+}
+.progresbar{
+    position: absolute;
+    background-color: #D1D5DB;
+    width: 100%;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.procircle{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #D1D5DB;
+    border-radius: 50%;
+    z-index: 1;
+}
+.active{
+    background-color: black;
+    border: 2px solid black;
+}
+.art img{
+    width: 160px;
+}
+.art ul{
+    color: #979797;
+    text-align: left;
+    font-size: 12px;
+}
+.button{
+    width: 100%;
+    font-size: 11px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 12px 0px;
+}
+.omg{ 
+    height: 100vh;
+    background: url('../../assets/Onboarding.png') no-repeat;
+    background-size: cover;
+    /* background-size: contain; */ 
+    background-position: top center;
+}
+
+@media screen and (max-width:500px) {
+    .olgrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+@media screen and (max-width:800px) {
+    .omg{
+        background-size: cover;
+    }
+}
+/* @media  (min-width: 100px) and (max-width:2100px) {
+    .omg{ 
+        background-size: cover;
+    }
+} */
+/* .omg2{
+
+    background: url('../../assets/Vectortwo.png') no-repeat;
+
+} */
+
+/* .omg .checktwo{
+    background: url('../../assets/Vectortwo.png') no-repeat;
+    background-position:  center;
+   
+    width: 100%;
+    height: 100%;
+    position: fixed;
+} */
+
+
+/* .olbg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    bottom: 0;
+    left: 0%;
+    padding: none;
+    float: left;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+.oltwo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 10%;
+    right: 0%;
+    bottom: 0;
+    left: 0%;
+    padding: none;
+    float: left;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    background: red;
+} */
