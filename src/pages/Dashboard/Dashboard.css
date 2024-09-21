@@ -109,10 +109,22 @@
 }
 .rcslide{
     height: 90vh;
-    width: 90%;
+    width: 95%;
     background-color: #fff;
     border: 1px solid black;
     border-radius: 10px;
+}
+.slick-dots li button::before{
+    margin: 10px 0px 0px 0px;
+    position: absolute;
+    font-size: 40px!important;
+    color: #000 !important;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
 }
 
 @media screen and (max-width:767px){

@@ -57,20 +57,14 @@ const Recommended = () => {
         slideRef.current.slickPrev();
     }
     return (
-        <div className='container-fluid p-0 recc min-vh-100'>
+        <div className='container-fluid p-0 recc '>
             {/* <Navbar /> */}
-            <div className="container pt-5 reccc">
+            <div className="container py-5 reccc">
                 <div className="dbwlcml">
                     <h5 className='my-1'>Recommended Jobs</h5>
 
                     <div className="mt-5 mx-4 relative-slider-container">
                         <Slider ref={slideRef} {...settings}>
-                            <Rslide />
-                            <Rslide />
-                            <Rslide />
-                            <Rslide />
-                            <Rslide />
-                            <Rslide />
                             <Rslide />
                             <Rslide />
                             <Rslide />

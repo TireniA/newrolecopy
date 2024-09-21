@@ -1,138 +1,7 @@
-.login {
-    background-image: url('../assets/Log-In.png');
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.login .form {
-    min-width: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: skyblue;
-}
-
-@font-face {
-    font-family: 'Strawford Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Strawford Regular'), url('Strawford-Regular.woff') format('woff');
-}
-
-.login .form img {
-    width: 23px;
-}
-
-.login .form h3 {
-    /* font-family: 'Strawford Regular', sans-serif; */
-    font-weight: 700;
-    font-size: 30px;
-    color: #191A15;
-    line-height: 38px;
-}
-
-.login .form-label {
-    font-family: 'Strawford Regular', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: #666666;
-}
-
-
-.login input,
-.login input:is(:hover, :focus, :active) {
-    background-color: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 8px;
-    box-shadow: none;
-    outline: none;
-    font-size: 13px;
-    font-family: 'Strawford Regular', sans-serif;
-    padding: 10px 10px;
-    border-radius: 6px;
-}
-
-.login .reg {
-    padding: 13px 0px;
-    font-size: 12px;
-    font-weight: 500;
-    border-radius: 8px;
-    font-family: 'Strawford Regular', sans-serif;
-}
-
-.login .bottom {
-    /* position: relative; */
-}
-
-.login .dont {
-    color: #666666;
-    font-family: 'Strawford Regular', sans-serif;
-    font-size: 12px;
-    line-height: 1;
-}
-
-.login .dont a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-}
-
-.login .or {
-    background: #FAFAFA;
-    width: 40px;
-    text-align: center;
-    margin: 20px auto;
-    font-family: 'Strawford Regular', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    position: relative;
-}
-
-.login .pr {
-    position: relative;
-}
-
-.login .or::before,
-.login .or::after {
-    position: absolute;
-    content: "";
-    background: #E0E0E0;
-    height: 2px;
-    width: 130px;
-}
-
-.login .or::before {
-    bottom: 40%;
-    right: 41px;
-}
-
-.login .or::after {
-    top: 50%;
-    left: 41px;
-}
-
-.login .social .btn {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #FAFAFA;
-    border: 1px solid #EEEEEE;
-    border-radius: 8px;
-    font-family: 'Strawford Regular', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 10px 0px;
-    /* padding-right: 50px; */
-}
-
-.signout img{
+.signout img, .loginform img{
     width: 25px;
 }
 .signout .img span{
-    /* font-family: 'Strawford Regular', sans-serif; */
     font-size: 16px;
     font-weight: 600;
 }
@@ -148,11 +17,9 @@
 }
 .signout .out span{
     margin-top: -9px;
-    font-family: 'Strawford Regular', sans-serif;
     font-size: 16px;
     font-weight: 800;
 }
-
 
 /* navbar  */
 .nav-item{
@@ -200,6 +67,11 @@
 
 .recc{
     background: url('../assets/Light.png') no-repeat center;
+    min-height: 100vh; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    flex: 1; 
 }
 
 

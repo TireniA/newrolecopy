@@ -1,0 +1,169 @@
+.login {
+    background: url('../../assets/login.png') no-repeat center/cover;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.login .nav-link {
+    color: #000 !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.logmenu a {
+    cursor: pointer;
+}
+
+.logbuttons button {
+    width: 110px;
+    height: 35px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 2px solid black !important;
+    border-radius: 9px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logbuttons button:first-child {
+    background-color: #000;
+    color: #fff;
+}
+
+.logbuttons button:first-child:hover {
+    border: 2px solid #D0D1D2;
+}
+
+.logbuttons button:nth-child(2) {
+    background-color: transparent;
+    color: #000;
+}
+
+.logbuttons button:nth-child(2):hover {
+    border: 2px solid #fff;
+}
+
+.logincon {
+    height: calc(100vh - 70px);
+}
+
+.loginform {
+    min-width: 380px;
+    padding: 0px 40px;
+}
+
+.loginform h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.loginin{
+    margin: 0;
+}
+.loginin label{
+    display: block;
+    font-size: 11px;
+    margin: 0;
+}
+.loginin p{
+    text-align: end;
+    margin-top: 0;
+}
+
+.loginform input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px 10px;
+    font-size: 12px;
+    font-family: inherit;
+    border: 1px solid #CCCCCC;
+    box-shadow: none;
+    color: #666666;
+}
+.loginin input{
+    margin-bottom: 8px;
+}
+
+.loginform button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 11px 0px;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+    border-radius: 8px;
+}
+
+.loginform p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+.loginform a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.loginform .hh {
+    position: relative;
+}
+
+.loginform small {
+    margin: 0px;
+    background-color: #FAFAFA;
+    color: #212121;
+    ;
+    padding: 2px 15px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.loginform small::after,
+.loginform small::before {
+    content: '';
+    position: absolute;
+    background-color: #E0E0E0;
+    width: 30%;
+    height: 2px;
+    top: 50%;
+}
+
+.loginform small::before {
+    right: 57.5%;
+}
+
+.loginform small::after {
+    left: 57.5%;
+}
+
+.logwith {
+    width: 80%;
+    justify-content: space-around;
+    height: 35px;
+    background: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+}
+.lpriv{
+    font-size: 10px !important;
+    text-align: center;
+    width: 60%;
+}
+
+@media screen and (max-width:420px) {
+    .loginform {
+        min-width: 0px;
+    }
+
+    .loginform small::before {
+        right: 63%;
+    }
+
+    .loginform small::after {
+        left: 62%;
+    }
+}

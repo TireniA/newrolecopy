@@ -30,7 +30,7 @@ const ResumeBuilder = () => {
     }
 
     const handleNavigate = () => {
-        navigate('/db')
+        navigate('/recommendation')
     }
     const renderStepContent = () => {
         switch (step) {
