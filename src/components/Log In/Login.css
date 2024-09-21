@@ -133,11 +133,11 @@
 }
 
 .loginform small::before {
-    right: 57.5%;
+    right: 56%;
 }
 
 .loginform small::after {
-    left: 57.5%;
+    left: 56%;
 }
 
 .logwith {
@@ -160,10 +160,10 @@
     }
 
     .loginform small::before {
-        right: 63%;
+        right: 57.5%;
     }
 
     .loginform small::after {
-        left: 62%;
+        left: 57%;
     }
 }
