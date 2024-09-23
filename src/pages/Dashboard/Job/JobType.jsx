@@ -2,7 +2,7 @@ import React from 'react'
 
 const JobType = ({ pfp, title }) => {
     return (
-        <div className='jobtitle'>
+        <div className='jobtitle text-center'>
             <div className="jobtitleimg">
                 <img src={pfp} alt="" className="img-fluid" />
             </div>

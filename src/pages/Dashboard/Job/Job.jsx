@@ -33,9 +33,9 @@ const Job = () => {
                 </div>
             </div>
             <div className="jobtypegrid">
-                {/* {jobtype.map(item => (
+                {jobtype.map(item => (
                     <JobType key={item.id} pfp={item.pfp} title={item.title} />
-                ))} */}
+                ))}
             </div>
             <div className="jobsjobs mt-2">
                 {jobs.map(item => (

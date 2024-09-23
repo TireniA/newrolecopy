@@ -270,11 +270,11 @@
 
 @media screen and (max-width:450px) {
     .rprogessbar {
-        left: 24%;
+        left: 19%;
     }
 
     .rprogress::before {
-        left: 24%;
+        left: 19%;
     }
 
     .eeoflex label{
@@ -285,10 +285,18 @@
 
 @media screen and (max-width:375px) {
     .rprogessbar {
-        left: 27%;
+        left: 24%;
     }
-
     .rprogress::before {
-        left: 27%;
+        left: 24%;
+    }
+}
+
+@media screen and (max-width:349px) {
+    .rprogessbar {
+        left: 26%;
+    }
+    .rprogress::before {
+        left: 26%;
     }
 }

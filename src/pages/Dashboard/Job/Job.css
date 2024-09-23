@@ -1,6 +1,9 @@
 .jobs{
     padding: 40px 150px;
 }
+.jobs h5{
+    font-weight: 560;
+}
 .jobdropdown, .jobsearch{
     border: 1px solid #000;
     border-radius: 6px;
@@ -21,9 +24,11 @@
     font-size: 12px;
 }
 .jobtypegrid{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 20px;
+    display: flex;
+    /* grid-template-columns: repeat(8, 1fr); */
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 10px;
 }
 .jobsjobs{
     display: grid;
@@ -39,7 +44,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 160px;
+    width: 135px;
     height: 110px;
     font-size: 13px;
     font-weight: 600;
@@ -56,6 +61,15 @@
     align-items: center;
     justify-content: center;
     margin: 5px;
+}
+.jobtitle:hover{
+    background-color: #08733D;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.jobtitle:hover .jobtitleimg{
+    background-color: #fff;
 }
 
 
@@ -99,7 +113,7 @@
     margin: 0;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:918px) {
     .jobsjobs{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -112,8 +126,11 @@
         padding: 40px 40px;
     }
 }
-@media screen and (max-width:420px) {
+@media screen and (max-width:450px) {
     .jobscontcont{
         padding: 0px 5px;
     }
+    .jobs{
+    padding: 40px 10px;
+}
 }
