@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../assets/dlogo.png'
 import pfp from '../assets/pfp.png'
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import '../styles/Styles.css'
 import { MdMenu } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
@@ -15,6 +15,21 @@ const Navbar = () => {
     };
 
     const [nav, setNav] = useState('dashboard')
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.pathname === '/db') {
+            setNav('dashboard');
+        }
+        else if (location.pathname === '/recommended') {
+            setNav('recommended');
+        } else if (location.pathname === '/job') {
+            setNav('jobs');
+        } else {
+            setNav(''); 
+        }
+    }, [location.pathname]);
 
     return (
         <nav className="navbar navbar-expand-md navbar-white bg-white">
@@ -38,7 +53,7 @@ const Navbar = () => {
                             <Link to='/recommended' className='nav-link hm'>Recommended</Link>
                         </li>
                         <li className={nav === 'jobs' ? 'nav-item activee' : 'nav-item'} onClick={() => setNav('jobs')}>
-                            <a className="nav-link" href="#">Jobs</a>
+                            <Link to='/job' className='nav-link hm'>Jobs</Link>
                         </li>
                         <li className={nav === 'application' ? 'nav-item activee' : 'nav-item'} onClick={() => setNav('application')}>
                             <a className="nav-link" href="#">Application</a>

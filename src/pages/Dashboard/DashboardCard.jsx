@@ -13,7 +13,7 @@ const DashboardCard = ({ pfp, logo, section, title, match }) => {
                 </div>
                 <h6>{title}</h6>
                 <p>Dropbox . Paris, France</p>
-                <div className="">
+                <div>
                     <small>Full-Time</small>
                     <small>Marketing</small>
                     <small>Design</small>

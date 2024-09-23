@@ -13,6 +13,7 @@ import Experience from './Experience'
 import Eeo from './Eeo'
 import Links from './Links'
 import { useNavigate } from 'react-router-dom'
+import { FaCheck } from 'react-icons/fa6'
 
 const ResumeBuilder = () => {
     const [step, setStep] = useState(1)
@@ -62,11 +63,11 @@ const ResumeBuilder = () => {
                     <div className="col-3 ">
                         <div className="rprogress">
                             <RbProgress step={step} totalSteps={totalSteps} />
-                            <div className={step >= 1 ? 'rcircle ractive' : 'rcircle'} data-title='Personal'><LuUser /></div>
-                            <div className={step >= 2 ? 'rcircle ractive' : 'rcircle'} data-title='Education'><BiSolidSchool /></div>
-                            <div className={step >= 3 ? 'rcircle ractive' : 'rcircle'} data-title='Experience'><PiReadCvLogo /></div>
-                            <div className={step >= 4 ? 'rcircle ractive' : 'rcircle'} data-title='EE0'><TiBusinessCard /></div>
-                            <div className={step >= 5 ? 'rcircle ractive' : 'rcircle'} data-title='Links'><IoLinkOutline /></div>
+                            <div className={step >= 1 ? 'rcircle ractive' : 'rcircle'} data-title='Personal'><FaCheck size={14} color='white' /></div>
+                            <div className={step >= 2 ? 'rcircle ractive' : 'rcircle'} data-title='Education'><FaCheck size={14} color='white' /></div>
+                            <div className={step >= 3 ? 'rcircle ractive' : 'rcircle'} data-title='Experience'><FaCheck size={14} color='white' /></div>
+                            <div className={step >= 4 ? 'rcircle ractive' : 'rcircle'} data-title='EE0'><FaCheck size={14} color='white' /></div>
+                            <div className={step >= 5 ? 'rcircle ractive' : 'rcircle'} data-title='Links'><FaCheck size={14} color='white' /></div>
                         </div>
                     </div>
                     <div className="col-9 pt-4  rbformcon">

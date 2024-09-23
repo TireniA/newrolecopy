@@ -4,6 +4,11 @@ import r3 from '../assets/rcmdth.png'
 import job1 from '../assets/job1.png'
 import job2 from '../assets/job2.png'
 import job3 from '../assets/job3.png'
+import jall from '../assets/jall.png'
+import jdesign from '../assets/jdesign.png'
+import jdev from '../assets/jdev.png'
+import jmark from '../assets/jmark.png'
+
 
 
 export const profile = [
@@ -76,6 +81,83 @@ export const job = [
         id : 3,
         pfp : job3,
         match : 'Saved a week ago',
+        title : 'Brand Designer'
+    },
+]
+
+export  const jobtype = [
+    {
+        id : 1,
+        pfp : jall,
+        title : 'All'
+    },
+    {
+        id : 2,
+        pfp : jdesign,
+        title : 'Web Design'
+    },
+    {
+        id : 3,
+        pfp : jdev,
+        title : 'Web Development'
+    },
+    {
+        id : 4,
+        pfp : jmark,
+        title : 'Marketing'
+    },
+    {
+        id : 5,
+        pfp : jall,
+        title : 'Data Entru'
+    },
+    {
+        id : 6,
+        pfp : jall,
+        title : 'Software Engineer'
+    },
+    {
+        id : 7,
+        pfp : jall,
+        title : 'Graphic Designer'
+    },
+]
+
+export const jobs = [
+    {
+        id : 1,
+        pfp : r1,
+        name : 'Nomad',
+        title : 'Social Media Assistant'
+    },
+    {
+        id : 2,
+        pfp : r2,
+        name : 'Maze',
+        title : 'Social Media Assistant'
+    },
+    {
+        id : 3,
+        pfp : r3,
+        name : 'Maze',
+        title : 'Brand Designer'
+    },
+    {
+        id : 4,
+        pfp : job1,
+        name : 'DropBox',
+        title : 'HR Manager'
+    },
+    {
+        id : 5,
+        pfp : job2,
+        name : 'Google',
+        title : 'HR Manager'
+    },
+    {
+        id : 6,
+        pfp : job3,
+        name : 'Maze',
         title : 'Brand Designer'
     },
 ]

@@ -68,46 +68,27 @@ const Education = () => {
                         </div>
 
                         <div className="edugridone row g-2 mt-1">
-                            <div className="edugridin col-md-4 col-8" >
-                                <label htmlFor={`startMonth${index}`}>Start Month</label>
+                            <div className="edugridin col-6" >
+                                <label htmlFor={`startMonth${index}`}>Start Date</label>
                                 <input
-                                    type="text"
+                                    type="date"
                                     placeholder='Type here'
                                     name="startMonth"
                                     id={`startMonth${index}`}
                                     onChange={(e) => handleChange(index, e)}
                                 />
                             </div>
-                            <div className="edugridin col-md-2 col-4" >
-                                <label htmlFor={`startYear${index}`}>Start Year</label>
+                            <div className="edugridin col-6" >
+                                <label htmlFor={`endMonth${index}`}>End Date</label>
                                 <input
-                                    type="text"
-                                    placeholder='Type here'
-                                    name="startYear"
-                                    id={`startYear${index}`}
-                                    onChange={(e) => handleChange(index, e)}
-                                />
-                            </div>
-                            <div className="edugridin col-md-4 col-8" >
-                                <label htmlFor={`endMonth${index}`}>End Month</label>
-                                <input
-                                    type="text"
+                                    type="date"
                                     placeholder='Type here'
                                     name="endMonth"
                                     id={`endMonth${index}`}
                                     onChange={(e) => handleChange(index, e)}
                                 />
                             </div>
-                            <div className="edugridin col-md-2 col-4" >
-                                <label htmlFor={`endYear${index}`}>End Year</label>
-                                <input
-                                    type="text"
-                                    placeholder='Type here'
-                                    name="endYear"
-                                    id={`endYear${index}`}
-                                    onChange={(e) => handleChange(index, e)}
-                                />
-                            </div>
+                           
                             
                             
                         </div>

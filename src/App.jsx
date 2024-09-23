@@ -11,6 +11,8 @@ import Recommendation from './pages/Recommendation/Recommendation'
 import Salary from './pages/Recommendation/Salary'
 import Start from './pages/Start/Start'
 import OnboardingLast from './components/Onboarding/OnboardingLast'
+import Job from './pages/Dashboard/Job/Job'
+import JobMain from './pages/Dashboard/Job/JobMain'
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path="/db" element={<><Navbar /><Dashboard /></>} />
           <Route path="/recommendation" element={<Recommendation />} />
           <Route path="/recommended" element={<><Navbar /><Recommended /></>} />
+          <Route path="/job" element={<><Navbar /><Job /></>} />
+          <Route path="/job/:id" element={<><Navbar /><JobMain /></>} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>

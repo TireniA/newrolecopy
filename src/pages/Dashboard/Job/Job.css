@@ -1,0 +1,119 @@
+.jobs{
+    padding: 40px 150px;
+}
+.jobdropdown, .jobsearch{
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+.jobdropdown button{
+    font-size: 12px;
+    padding: 8px;
+}
+.jobsearch{
+    background-color: white;
+    padding: 8px 10px;
+}
+.jobsearch input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 140px;
+    font-size: 12px;
+}
+.jobtypegrid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+}
+.jobsjobs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 15px;
+}
+
+/* JOB TITLE  */
+.jobtitle{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 160px;
+    height: 110px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 5px;
+    background: #fff;
+    border-radius: 8px;
+}
+.jobtitleimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d1d2d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+
+/* JOBS */
+.jobpicks{
+    border: 1px solid #000;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+.jobpicks img{
+    width: 35px;
+}
+
+/* JOB MAIN  */
+.jobscont{
+    border: 1px solid #000;
+    border-radius: 8px;
+    min-height: 100vh;
+}
+.jobscontcont{
+    padding: 0px 40px;
+}
+
+/* JOB DESCRI */
+.jobdescri img{
+    width: 60px;
+}
+.jobdescri h5{
+    font-weight: 600;
+}
+.jobdescri .rdesloc p{
+    font-size: 14px;
+}
+.jobdescri .divt p{
+    font-size: 15px;
+    color: #d1d2d3;
+    margin: 0;
+}
+
+@media screen and (max-width:900px) {
+    .jobsjobs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
+        row-gap: 15px;
+    }
+}
+@media screen and (max-width:767px) {
+    .jobs{
+        padding: 40px 40px;
+    }
+}
+@media screen and (max-width:420px) {
+    .jobscontcont{
+        padding: 0px 5px;
+    }
+}

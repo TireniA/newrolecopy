@@ -21,7 +21,8 @@
 }
 
 .dbwlcmf {
-  background-color: black;
+  /* background-color: black; */
+  background-image: url('../../assets/dbbg.png');
   color: white;
 }
 
@@ -94,22 +95,22 @@
 .dbgriditem .logo{
     width: 25px;
 }
-.dbgriditem h6{
+.dbgriditem h6, .jobpicks h6{
     font-size: 14px;
     font-weight: 600;
     margin-top: 9px;
 }
-.dbgriditem p{
+.dbgriditem p, .jobpicks p{
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 6px;
     color: #515B6F;;
 }
-.dbgriditem span{
+.dbgriditem span, .rdesmatch{
     color: #59CA66;
     font-weight: 600;
 }
-.dbgriditem small{
+.dbgriditem small, .rdes small, .jobpicks small{
     text-wrap: wrap;
     font-size: 11px;
     font-weight: 600;
@@ -121,7 +122,7 @@
 .dbgriditemdj {
   width: 90% !important;
   height: 160px;
-  background-color: #000;
+  background-color: transparent;
   border: 1px solid #fff;
 }
 
@@ -164,8 +165,9 @@
   z-index: 1;
 }
 .rcslide {
-  height: 90vh;
-  width: 95%;
+  min-height: 100vh;
+  /* width: 95%; */
+  margin-right: 20px;
   background-color: #fff;
   border: 1px solid black;
   border-radius: 10px;

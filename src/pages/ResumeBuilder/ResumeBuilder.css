@@ -17,7 +17,7 @@
     width: 3px;
     /* background-color: yellow; */
     top: 0%;
-    left: 7%;
+    left: 6%;
     transform: translateX(-50%);
 }
 
@@ -27,12 +27,12 @@
     width: 3px;
     /* background-color: green; */
     top: 0%;
-    left: 7%;
+    left: 6%;
     transform: translateX(-50%);
 }
 
 .rcircle {
-    width: 35px;
+    /* width: 35px;
     height: 35px;
     background-color: white;
     color: #D1D5DB;
@@ -41,12 +41,23 @@
     display: flex;
     align-items: center;
     border: 1px solid #D1D5DB;
+    justify-content: center; */
+
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    background-color: white;
+    border: 2px solid #D1D5DB;
+    border-radius: 50%;
+    z-index: 1;
+    color: #465668;
 }
 
 .ractive {
-    border: 1px solid #000;
-    color: #000;
+    background-color: black;
+    border: 2px solid black;
 }
 
 .rcircle::after {
@@ -212,6 +223,13 @@
     .rcircle::after {
         left: calc(100% - 160px);
     }
+    .rprogessbar {
+        left: 7%;
+    }
+
+    .rprogress::before {
+        left: 7%;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -220,11 +238,11 @@
     }
 
     .rprogessbar {
-        left: 11%;
+        left: 10%;
     }
 
     .rprogress::before {
-        left: 11%;
+        left: 10%;
     }
 }
 
@@ -234,11 +252,11 @@
     }
 
     .rprogessbar {
-        left: 17%;
+        left: 14%;
     }
 
     .rprogress::before {
-        left: 17%;
+        left: 14%;
     }
     .rbupload{
         flex-direction: column;

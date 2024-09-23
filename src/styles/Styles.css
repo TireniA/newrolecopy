@@ -74,9 +74,125 @@
     flex: 1; 
 }
 
+/* DNAVBAR */
+.dnavbar{
+    align-items: center;
+    justify-content: space-between;
+}
+.dnavmenu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 13px;
+    color: #D0D1D2;
+}
+.dnavitem{
+    cursor: pointer;
+}
+.dnavactive{
+    position: relative;
+    width: 100%;
+    color: #000;
+    font-weight: 600;
+}
+.dnavactive::after{
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 30%;
+    height: 3px;
+    bottom: -30%;
+    left: 20%;
+}
+.dnavactions{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.dnavactions button{
+    width: 70px;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 3px 0px;
+    outline: none;
+    font-weight: 600;
+}
+.dnavsave{
+    background: #000;
+    color: #fff;
+    border: none;
+}
+.dnavapply{
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.dnavapply img{
+    width: 15px;
+}
+
+
+/* RDESCRIPTION */
+.rdesloc p{
+    font-weight: 700;
+    margin: 1px;
+}
+.rdesmatch, .rdivtf{
+    float: right;
+}
+.rdesimg{
+    background: #D0D1D2;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.rdesgrid{
+   float: right;
+}
+.rdeslist, .rdessedp, .rcomp p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
 
 @media screen and (max-width:767px) {
     .activee::after, .nav-profile img{
         display: none;
     }
+}
+@media screen and (max-width:991px) and (min-width:767px) {
+    .rdes .divo, .rdes .divt, .dnavbar{
+        flex-direction: column;
+    }
+    .rdesmatch, .rdivtf{
+        float: inline-start;
+    }
+    .dnavactive{
+        width: auto;
+    }
+    .dnavactive::after{
+        left: 30%;
+    }
+    .dnavbar{
+        align-items: start;
+    }
+    
+}
+@media screen and (max-width:470px)  {
+    .rdes .divo, .rdes .divt, .dnavbar{
+        flex-direction: column;
+    }
+    .rdesmatch, .rdivtf{
+        float: inline-start;
+    }
+    .dnavactive{
+        width: auto;
+    }
+    .dnavactive::after{
+        left: 30%;
+    }
+    .dnavbar{
+        align-items: start;
+    }
+    
 }

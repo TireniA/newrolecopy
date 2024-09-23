@@ -8,6 +8,7 @@ import logo from "../../assets/logo.png";
 import { recommended } from "../../utils/data";
 import { job } from "../../utils/data";
 import DashboardCard from "./DashboardCard";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
     const slideRef = useRef();
@@ -35,6 +36,7 @@ const Dashboard = () => {
     const slideLeft = () => {
         slideRef.current.slickPrev();
     };
+    const navigate = useNavigate()
 
     return (
         <div className="container-fluid p-0 dashb">
@@ -57,7 +59,7 @@ const Dashboard = () => {
                             <h6 className="my-1">Get your Dream Job</h6>
                             <p>Check out your top matches</p>
                         </div>
-                        <div className="dbwlcmrt d-flex mb-md-0 mb-4 flex-column gap-2">
+                        <div className="dbwlcmrt d-flex  mb-4 flex-column gap-2">
                             <p className="m-0">Profile Completion : 70%</p>
                             <div className="dbwlcmrt-hr">
                                 <div className="dbwlcmrthrt"></div>
@@ -89,7 +91,7 @@ const Dashboard = () => {
                         <p>Check out your top matches</p>
                     </div>
                     <div className="dbwlcmrt d-flex align-items-center mb-4 mb-md-0 gap-2">
-                        <button>More Recommendations</button>
+                        <button onClick={() => navigate('/recommended')}>More Recommendations</button>
                     </div>
                 </div>
 
@@ -105,7 +107,7 @@ const Dashboard = () => {
                         <p>Check out your top matches</p>
                     </div>
                     <div className="dbwlcmrt d-flex align-items-center mb-4 mb-md-0  gap-2">
-                        <button>View Jobs</button>
+                        <button onClick={() => navigate('/job')}>View Jobs</button>
                     </div>
                 </div>
 
